@@ -1,11 +1,24 @@
 import React from 'react'
 import CommonHead from '../common/CommonHead'
 import SingleCar from '../common/SingleCar'
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";  
+import "slick-carousel/slick/slick-theme.css";
 
 const Browse = () => {
+    const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    
+  };
   return (
     <>
-        <main id='Browse'>
+        <main id='Browse' className='mt-[100px]'>
             <div className="container">
                 <div id="Browse-Row">
                     {/* ----------------Common Head--------------------- */}
@@ -13,7 +26,13 @@ const Browse = () => {
 
                     {/* ---------------- Slider--------------------- */}
                     <section className='mt-10'>
-                        <SingleCar />
+                        <Slider {...settings}>
+                            <SingleCar />
+                            <SingleCar />
+                            <SingleCar />
+                            <SingleCar />
+
+                        </Slider>
                     </section>
 
                 </div>

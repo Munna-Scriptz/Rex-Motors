@@ -6,7 +6,7 @@ import { MdArrowOutward } from 'react-icons/md'
 
 const SingleCar = () => {
   return (
-    <div className='w-[360px] h-[520px] rounded-[24px] py-4 px-4 bg-cover bg-center' style={{backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url(${car})`}}>
+    <div className='w-[360px] mx-auto h-[520px] rounded-[24px] py-4 px-4 bg-cover bg-center' style={{backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url(${car})`}}>
         <div className='w-[100px] bg-brand px-3 py-1.5 rounded-[8px] flex items-center gap-2'>
             <div className='bg-white rounded-full flex items-center justify-center w-[20px] h-[20px] text-sm'>
                 <PiJeepLight />
