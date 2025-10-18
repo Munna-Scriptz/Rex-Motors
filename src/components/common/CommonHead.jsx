@@ -3,7 +3,7 @@ import { FaArrowRightLong } from 'react-icons/fa6'
 import { MdArrowOutward } from 'react-icons/md'
 import { Link } from 'react-router'
 
-const CommonHead = ({text}) => {
+const CommonHead = ({text , linkName}) => {
   return (
     <div className='flex items-center justify-between'>
         <div className='flex items-center gap-5.5'>
@@ -12,7 +12,7 @@ const CommonHead = ({text}) => {
         </div>
 
         {/* --------------- View All  */}
-        <Link className='text-second flex items-center gap-2.5 font-bold' to={'/'}>View All <div className='w-[24px] h-[24px] bg-brand text-white rounded-full flex items-center justify-center text-lg'><MdArrowOutward className=''/></div></Link>
+        <Link className='text-second flex items-center gap-2.5 font-bold' to={'/'}>{linkName} <div className='w-[24px] h-[24px] bg-brand text-white rounded-full flex items-center justify-center text-lg'><MdArrowOutward className=''/></div></Link>
     </div>
   )
 }

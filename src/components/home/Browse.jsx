@@ -22,7 +22,7 @@ const Browse = () => {
             <div className="container">
                 <div id="Browse-Row">
                     {/* ----------------Common Head--------------------- */}
-                    <CommonHead text={'Browse By Type'}/>
+                    <CommonHead text={'Browse By Type'} linkName={'View All'}/>
 
                     {/* ---------------- Slider--------------------- */}
                     <section className='mt-10'>
