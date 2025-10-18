@@ -1,4 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 /* ------------------------- tailwind css --------------------------- */
 @import "tailwindcss";
 
+@utility container {
+  margin-inline: auto;
+  padding-inline: 0.8rem;
+}
 /* ------------------------- Themes --------------------------- */
+@theme{
+    --font-dmSans: "DM Sans", "sans-serif";
+    --color-brand: #012169;
+    --color-primary: #050B20;
+}
