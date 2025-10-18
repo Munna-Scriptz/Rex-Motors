@@ -11,5 +11,6 @@
 @theme{
     --font-dmSans: "DM Sans", "sans-serif";
     --color-brand: #012169;
+    --color-second: #212529;
     --color-primary: #050B20;
 }
