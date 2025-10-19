@@ -6,6 +6,7 @@ import Listing from '../components/home/Listing'
 import MiddleBanner from '../components/home/MiddleBanner'
 import Auctions from '../components/home/Auctions'
 import Trending from '../components/home/Trending'
+import PrivateSales from '../components/home/PrivateSales'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <MiddleBanner />
       <Auctions />
       <Trending />
+      <PrivateSales />
     </>
   )
 }
