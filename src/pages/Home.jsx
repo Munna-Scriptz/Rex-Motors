@@ -8,6 +8,7 @@ import Auctions from '../components/home/Auctions'
 import Trending from '../components/home/Trending'
 import PrivateSales from '../components/home/PrivateSales'
 import Purchase from '../components/home/Purchase'
+import Review from '../components/home/Review'
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <Trending />
       <PrivateSales />
       <Purchase />
+      <Review />
     </>
   )
 }
