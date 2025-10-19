@@ -7,7 +7,7 @@ import { RxArrowTopRight } from 'react-icons/rx'
 const Contact = () => {
   return (
     <>
-        <main id='Contact' className='mt-[112px]'>
+        <main id='Contact' className='mt-[82px]'>
             <div className="container">
                 <div id="Contact-Row" className='py-[32px] px-[28px] bg-cover bg-no-repeat rounded-[24px] w-full h-[415px] flex items-start justify-between ' style={{backgroundImage: `url(${contactBg})`}}>
                     {/* ------------------------ left Side  */}
