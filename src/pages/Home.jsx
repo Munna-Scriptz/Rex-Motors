@@ -4,6 +4,7 @@ import Browse from '../components/home/Browse'
 import Brands from '../components/home/Brands'
 import Listing from '../components/home/Listing'
 import MiddleBanner from '../components/home/MiddleBanner'
+import Auctions from '../components/home/Auctions'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Brands />
       <Listing />
       <MiddleBanner />
+      <Auctions />
     </>
   )
 }
