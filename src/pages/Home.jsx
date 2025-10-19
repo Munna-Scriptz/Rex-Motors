@@ -7,6 +7,7 @@ import MiddleBanner from '../components/home/MiddleBanner'
 import Auctions from '../components/home/Auctions'
 import Trending from '../components/home/Trending'
 import PrivateSales from '../components/home/PrivateSales'
+import Purchase from '../components/home/Purchase'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Auctions />
       <Trending />
       <PrivateSales />
+      <Purchase />
     </>
   )
 }
