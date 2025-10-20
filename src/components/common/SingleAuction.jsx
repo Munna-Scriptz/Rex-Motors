@@ -3,20 +3,18 @@ import { CiBookmark, CiHeart } from 'react-icons/ci'
 import { FaCheck } from 'react-icons/fa6'
 import { Link } from 'react-router'
 import car from '../../assets/singleLIst.jpg'
-import { MdArrowOutward } from 'react-icons/md'
-import { BsCalendar2Date } from 'react-icons/bs'
 
-const SingleAuction = () => {
+const SingleAuction = ({img,title,type,model,date}) => {
     return (
-        <div className='w-[360px] rounded-[24px] border-1 border-[#D8D8D8]'>
+        <div className='md:w-[360px] w-full rounded-[24px] border-1 border-[#D8D8D8]'>
 
 
             {/* ---------------------- Image section  */}
             <div className='relative '>
-                <img className='rounded-t-[12px] w-full' src={car} alt="Car image" />
+                <img className='rounded-t-[12px] w-full' src={img} alt="Car image" />
 
                 <div className='absolute left-[12px] top-[12px] w-[130px] bg-[#01216933] px-3 py-1.5 rounded-[8px] flex items-center gap-2' style={{backdropFilter: 'blur(10px)'}}>
-                    <p className='text-white font-medium text-xs'>11 PM, 15 FEB 2025</p>
+                    <p className='text-white font-medium text-xs'>{date}</p>
                 </div>
 
                 {/* ------- Save button  */}
@@ -28,10 +26,10 @@ const SingleAuction = () => {
 
             <article className='pb-6 px-5 pt-4'>
                 {/* --------------------- Texts  */}
-                <h2 className='text-black text-2xl font-bold'>Live Today</h2>
+                <h2 className='text-black text-2xl font-bold'>{title}</h2>
                 <div className='mt-8 mb-3'>
-                    <p className='text-[#00000099] text-base font-semibold'>Highest Bid</p>
-                    <h2 className='text-[#000000CC] text-lg font-semibold mt-1'>JL Auctioneers & Hobbies </h2>
+                    <p className='text-[#00000099] text-base font-semibold'>{type}</p>
+                    <h2 className='text-[#000000CC] text-lg font-semibold mt-1'>{model} </h2>
                 </div>
 
                 {/* -------------------- Price  */}

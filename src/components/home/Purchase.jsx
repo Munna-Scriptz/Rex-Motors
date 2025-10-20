@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaArrowRight, FaArrowRightLong } from 'react-icons/fa6'
 import SinglePurchase from '../common/SinglePurchase'
+import { CarData } from '../../assets/CarData/CarData'
 
 const Purchase = () => {
     return (
@@ -26,12 +27,9 @@ const Purchase = () => {
 
                         {/* ----------------------- Slider ---------------------- */}
                         <section className='mt-10 flex items-center justify-center gap-10 flex-wrap'>
-                            <SinglePurchase />
-                            <SinglePurchase />
-                            <SinglePurchase />
-                            <SinglePurchase />
-                            <SinglePurchase />
-                            <SinglePurchase />
+                            {CarData.slice(0,6).map((item , i)=>(
+                                <SinglePurchase img={item.image} title={item.title} EsPrice={item.estimatePrice} date={item.published} />
+                            ))}
                         </section>
                     </div>
                 </div>

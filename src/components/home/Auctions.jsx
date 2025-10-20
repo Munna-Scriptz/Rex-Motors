@@ -35,7 +35,7 @@ const Auctions = () => {
                         {/* --------------------------- ALl Auctions --------------------- */}
                         <section className='mt-10 flex items-center justify-center flex-wrap gap-10'>
                             {CarData.map((item , i)=>(
-                                <SingleAuction key={i} img={item.image} type={item.type} title={item.title} desc={item.description} />
+                                <SingleAuction key={i} img={item.image} type={item.type} title={item.title} desc={item.description} model={item.model} date={item.published} />
                             ))}
                         </section>
 

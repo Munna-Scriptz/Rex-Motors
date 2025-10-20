@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { FaArrowRight, FaArrowRightLong } from 'react-icons/fa6'
 import SingleTrending from '../common/SingleTrending'
 import Slider from 'react-slick'
+import { CarData } from '../../assets/CarData/CarData'
 
 const Trending = () => {
     const [center, setCenter] = useState(0);
@@ -16,14 +17,8 @@ const Trending = () => {
         speed: 1000,
         beforeChange: (oldIndex, newIndex) => setCenter(newIndex),
         autoplay: true,
-        responsive: [{ breakpoint: 1024, settings: { slidesToShow: 3 } }, { breakpoint: 768, settings: { slidesToShow: 2 } }, { breakpoint: 480, settings: { slidesToShow: 1 } }]
+        responsive: [{ breakpoint: 1024, settings: { slidesToShow: 3 } }, { breakpoint: 768, settings: { slidesToShow: 1 } }, { breakpoint: 480, settings: { slidesToShow: 1 } }]
     }
-    const slides = [
-        { name: "New York" },
-        { name: "London" },
-        { name: "Rome" },
-        { name: "Barcelona" },
-    ]
     return (
         <>
             <main id='Trending' className='mt-[122px]'>
@@ -51,10 +46,10 @@ const Trending = () => {
                         {/* ---------------------------- SLider ----------------------- */}
                         <section className='mt-10'>
                             <Slider {...settings}>
-                                {slides.map((item, idx) => (
+                                {CarData.map((item, idx) => (
                                     <div key={idx} className="px-2 cursor-pointer">
                                         <div className={`relative rounded-xl transition-transform duration-300 ${idx === center ? "scale-98" : "scale-92"}`} >
-                                            <SingleTrending />
+                                            <SingleTrending key={idx} img={item.image} title={item.title} desc={item.description} fuel={item.fuel} />
 
                                             {idx === center ? (
                                                 ''

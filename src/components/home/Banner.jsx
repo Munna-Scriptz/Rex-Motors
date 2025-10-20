@@ -6,7 +6,7 @@ import SearchFilter from '../common/SearchFilter'
 const Banner = () => {
   return (
     <>
-        <main id='content' className='lg:h-[600px] h-[750px] mt-[25px] relative'>
+        <main id='content' className='lg:h-[600px] max-h-[750px] mt-[25px] relative overflow-hidden'>
             <div className="container">
                 <div id="content-Row">
                   <div className='relative'>

@@ -3,15 +3,15 @@ import { Link } from 'react-router'
 import car from '../../assets/purchaseCar.jpg'
 import { CiHeart } from 'react-icons/ci'
 
-const SinglePurchase = () => {
+const SinglePurchase = ({img,title,EsPrice,date}) => {
     return (
         <div className='w-[360px] rounded-[24px] border-1 border-[#D8D8D8]'>
             {/* ---------------------- Image section  */}
             <div className='relative '>
-                <img className='rounded-t-[12px] w-full' src={car} alt="Car image" />
+                <img className='rounded-t-[12px] w-full' src={img} alt="Car image" />
 
                 <div className='absolute left-[12px] top-[12px] w-[130px] bg-[#01216933] px-3 py-1.5 rounded-[8px] flex items-center gap-2' style={{ backdropFilter: 'blur(10px)' }}>
-                    <p className='text-white font-medium text-xs'>11 PM, 15 FEB 2025</p>
+                    <p className='text-white font-medium text-xs'>{date}</p>
                 </div>
 
                 {/* ------- Save button  */}
@@ -23,10 +23,10 @@ const SinglePurchase = () => {
 
             <article className='pb-6 px-3 pt-4'>
                 {/* --------------------- Texts  */}
-                <h2 className='text-black text-2xl font-bold'>Why You Should (Often) Pay More for</h2>
+                <h2 className='text-black text-2xl font-bold'>{title}</h2>
                 <div className='mt-5 mb-3'>
                     <p className='text-[#00000099] text-base font-medium'>Estimate</p>
-                    <h2 className='text-[#000000CC] text-lg font-semibold mt-2'>USD 40,000 - USD 60,000 </h2>
+                    <h2 className='text-[#000000CC] text-lg font-semibold mt-2'>{EsPrice}</h2>
                 </div>
 
                 {/* -------------------- Price  */}
