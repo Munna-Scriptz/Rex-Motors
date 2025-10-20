@@ -15,17 +15,17 @@ const Brands = () => {
                     <CommonHead text={'Explore Our Premium Brands'} linkName={'Show All Brands'} />
 
                     {/* -------------------- Brands  */}
-                    <div className='mt-[70px] flex items-center justify-between'>
-                        <div className='w-[250px] flex items-center justify-center py-[65px] px-[44px] rounded-[12px] border-1 border-[#E9E9E9]'>
+                    <div className='mt-[70px] flex flex-wrap gap-y-3 items-center justify-between'>
+                        <div className='md:w-[250px] w-[160px] flex items-center justify-center md:py-[65px] py-[16px] md:px-[44px] px-[16px] rounded-[12px] border-1 border-[#E9E9E9]'>
                             <img src={brand1} alt="Brand Logo" />
                         </div>
-                        <div className='w-[250px] flex items-center justify-center py-[65px] px-[44px] rounded-[12px] border-1 border-[#E9E9E9]'>
+                        <div className='md:w-[250px] w-[160px] flex items-center justify-center md:py-[65px] py-[16px] md:px-[44px] px-[16px] rounded-[12px] border-1 border-[#E9E9E9]'>
                             <img src={brand2} alt="Brand Logo" />
                         </div>
-                        <div className='w-[250px] flex items-center justify-center py-[65px] px-[44px] rounded-[12px] border-1 border-[#E9E9E9]'>
+                        <div className='md:w-[250px] w-[160px] flex items-center justify-center md:py-[65px] py-[16px] md:px-[44px] px-[16px] rounded-[12px] border-1 border-[#E9E9E9]'>
                             <img src={brand3} alt="Brand Logo" />
                         </div>
-                        <div className='w-[250px] flex items-center justify-center py-[65px] px-[44px] rounded-[12px] border-1 border-[#E9E9E9]'>
+                        <div className='md:w-[250px] w-[160px] flex items-center justify-center md:py-[65px] py-[16px] md:px-[44px] px-[16px] rounded-[12px] border-1 border-[#E9E9E9]'>
                             <img src={brand4} alt="Brand Logo" />
                         </div>
                     </div>

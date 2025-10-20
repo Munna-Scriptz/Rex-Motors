@@ -10,7 +10,7 @@ import { PiPathDuotone } from 'react-icons/pi'
 
 const SingleListing = () => {
   return (
-    <div className='w-[360px] mx-auto rounded-[24px] py-6 px-6 border-1 border-[#D8D8D8]'>
+    <div className='md:w-[360px] w-full mx-auto rounded-[24px] py-6 px-6 border-1 border-[#D8D8D8]'>
 
 
         {/* ---------------------- Image section  */}

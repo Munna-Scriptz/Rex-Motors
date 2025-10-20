@@ -14,12 +14,13 @@ const Listing = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
+        responsive: [{ breakpoint: 1024, settings: { slidesToShow: 3 } }, { breakpoint: 768, settings: { slidesToShow: 2 } }, { breakpoint: 480, settings: { slidesToShow: 1 } }]
     } 
     const sliderRef = useRef(null);
 
   return (
     <>
-        <main id='Listing' className='mt-[112px]'>
+        <main id='Listing' className='md:mt-[112px] mt-[80px]'>
             <div className="container">
                 <div id="Listing-Row">
                     {/* ---------------------- Common head  */}
