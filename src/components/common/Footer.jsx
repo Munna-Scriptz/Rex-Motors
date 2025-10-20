@@ -17,21 +17,22 @@ import { GoMail } from 'react-icons/go'
 
 const Footer = () => {
     return (
-        <footer className='mt-20 lg:mt-[120px] bg-brand'>
-            <div className='max-w-[1400px] mx-auto px-4'>
+        <footer className='mt-20 lg:mt-[120px] bg-brand z-10 relative'>
+            <div className='max-w-[1400px] mx-auto px-4 relative'>
                 {/* ----------------Footer Header---------------- */}
                 <div className='pt-15 flex items-center justify-between'>
-                    <div>
+                    <Link to={'/'}>
                         <img className='w-[220px]' src={Logo} alt="Logo   " />
-                    </div>
+                    </Link>
 
                     <div className='bg-white h-[62px] rounded-[6px] w-[400px] relative'>
                         <GoMail className='absolute top-1/2 -translate-y-1/2 left-4 text-[#9CA3AF] text-xl pointer-events-none' />
                         <input className='w-full h-full pl-12 outline-none' type="email" placeholder='Enter your email address'/>
                         <button className='bg-brand py-2.5 px-5 absolute right-3 cursor-pointer top-2.5 text-white font-bold rounded-[8px]'>SEND</button>
+                        <p className='text-white opacity-75 text-xs mt-2'>By subscribing you agree to our Terms & Conditions and Privacy Policy.</p>
                     </div>
                 </div>
-                <div id="FooterRow" className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 py-12 lg:py-[65px]'>
+                <div id="FooterRow" className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-7 py-12 lg:py-[65px]'>
                     {/* ----------------Column 1---------------- */}
                     <div>
                         <h2 className='text-white text-lg font-semibold mb-3'>Do You Need Help ?</h2>
@@ -158,7 +159,11 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+            {/* ----------------------------- Aura Decorations -------------------------- */}
+            <div className='w-[450px] h-[500px] bg-[#935EFF80] rounded-full blur-[130px] absolute top-20 -left-4 -z-10 pointer-events-none'></div>
+            <div className='w-[450px] h-[500px] bg-[#935EFF80] rounded-full blur-[140px] absolute top-60 -right-12 -z-10 pointer-events-none'></div>
             </div>
+
 
         </footer>
     )

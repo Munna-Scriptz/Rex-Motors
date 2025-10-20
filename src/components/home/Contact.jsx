@@ -9,7 +9,7 @@ const Contact = () => {
     <>
         <main id='Contact' className='mt-[82px]'>
             <div className="container">
-                <div id="Contact-Row" className='py-[32px] px-[28px] bg-cover bg-no-repeat rounded-[24px] w-full h-[415px] flex items-start justify-between ' style={{backgroundImage: `url(${contactBg})`}}>
+                <div id="Contact-Row" className='py-[32px] px-[28px] bg-cover bg-no-repeat rounded-[24px] w-full h-[425px] flex items-start justify-between ' style={{backgroundImage: `url(${contactBg})`}}>
                     {/* ------------------------ left Side  */}
                     <div>
                         <h2 className='text-white font-medium text-3xl w-[200px] border-l-[4px] border-[#07D700] pl-8'>Get Support & Buy your Car</h2>
