@@ -4,6 +4,7 @@ import { RxArrowLeft, RxArrowRight } from 'react-icons/rx'
 import SingleAuction from '../common/SingleAuction'
 import { MdArrowOutward } from 'react-icons/md'
 import { Link } from 'react-router'
+import { CarData } from '../../assets/CarData/CarData'
 
 const Auctions = () => {
     return (
@@ -33,18 +34,9 @@ const Auctions = () => {
 
                         {/* --------------------------- ALl Auctions --------------------- */}
                         <section className='mt-10 flex items-center justify-center flex-wrap gap-10'>
-                            <SingleAuction />
-                            <SingleAuction />
-                            <SingleAuction />
-                            <SingleAuction />
-                            <SingleAuction />
-                            <SingleAuction />
-                            <SingleAuction />
-                            <SingleAuction />
-                            <SingleAuction />
-                            <SingleAuction />
-                            <SingleAuction />
-                            <SingleAuction />
+                            {CarData.map((item , i)=>(
+                                <SingleAuction key={i} img={item.image} type={item.type} title={item.title} desc={item.description} />
+                            ))}
                         </section>
 
                         {/* ---------------------- View All ------------------------ */}

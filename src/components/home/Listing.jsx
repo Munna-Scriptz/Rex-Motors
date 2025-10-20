@@ -3,6 +3,7 @@ import CommonHead from '../common/CommonHead'
 import SingleListing from '../common/SingleListing'
 import Slider from 'react-slick';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import { CarData } from '../../assets/CarData/CarData';
 
 const Listing = () => {
     const settings = {
@@ -13,7 +14,7 @@ const Listing = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        responsive: [{ breakpoint: 1024, settings: { slidesToShow: 3 } }, { breakpoint: 768, settings: { slidesToShow: 2 } }, { breakpoint: 480, settings: { slidesToShow: 1 } }]
+        responsive: [{ breakpoint: 1024, settings: { slidesToShow: 3 } }, { breakpoint: 768, settings: { slidesToShow: 2 } }, { breakpoint: 480, settings: { slidesToShow: 1, dots: false,} }]
     } 
     const sliderRef = useRef(null);
 
@@ -33,16 +34,15 @@ const Listing = () => {
                     {/* ------------------------ Slider  */}
                     <div className='mt-10'>
                         <Slider ref={sliderRef} {...settings}>
-                        <SingleListing />
-                        <SingleListing />
-                        <SingleListing />
-                        <SingleListing />
+                            {CarData.map((item , i)=>(
+                                <SingleListing key={i} img={item.image} type={item.type} title={item.title} desc={item.description} speed={item.speed} fuel={item.fuel} func={item.functionality} price={item.price} />
+                            ))}
 
                         </Slider>
                     </div>
                     {/* ----------------Arrow And Dots--------------------- */}
-                    <div className='mt-10 flex items-center justify-center'>
-                        <div className='flex items-center gap-45'>
+                    <div className='mt-10 items-center justify-center md:flex hidden'>
+                        <div className='flex items-center gap-115'>
                             <div className='text-primary cursor-pointer z-10 w-[30px] h-[30px] hover:bg-brand rounded-full duration-300 hover:text-white flex items-center justify-center' onClick={() => sliderRef.current?.slickPrev()}>
                                 <IoIosArrowBack />
                             </div>

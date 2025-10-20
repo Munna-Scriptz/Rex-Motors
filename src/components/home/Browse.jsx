@@ -4,6 +4,7 @@ import SingleCar from '../common/SingleCar'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";  
 import "slick-carousel/slick/slick-theme.css";
+import { CarData } from '../../assets/CarData/CarData';
 
 const Browse = () => {
     const settings = {
@@ -17,6 +18,7 @@ const Browse = () => {
     autoplaySpeed: 2000,
     responsive: [{ breakpoint: 1024, settings: { slidesToShow: 3 } }, { breakpoint: 768, settings: { slidesToShow: 2 } }, { breakpoint: 480, settings: { slidesToShow: 1 } }]
   };
+
   return (
     <>
         <main id='Browse' className='mt-[100px]'>
@@ -28,10 +30,9 @@ const Browse = () => {
                     {/* ---------------- Slider--------------------- */}
                     <section className='mt-10'>
                         <Slider {...settings}>
-                            <SingleCar />
-                            <SingleCar />
-                            <SingleCar />
-                            <SingleCar />
+                            {CarData.map((item , i)=>(
+                                <SingleCar key={i} img={item.image} type={item.type} title={item.title} desc={item.description} />
+                            ))}
 
                         </Slider>
                     </section>
