@@ -2,10 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 import Logo from '../../assets/logoWhite2.png'
 import paymentIcon from '../../assets/paymenFooter.svg'
-import playStore from '../../assets/playStore.svg'
-import appStore from '../../assets/appStore.svg'
 import qrCode from '../../assets/qrCode.png'
-
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
@@ -142,7 +139,6 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-
                 {/* ---------Bottom Section--------- */}
                 <div className='border-t border-[#FFFFFF33]'>
                     <div className="container px-4 lg:px-0 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0 py-6 lg:py-[30px]">

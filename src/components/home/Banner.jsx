@@ -1,5 +1,5 @@
 import React from 'react'
-import bannerImg from '../../assets/bannerImg.png'
+import bannerImg from '../../assets/bannerBg.png'
 import SearchFilter from '../common/SearchFilter'
 
 const Banner = () => {
@@ -8,8 +8,14 @@ const Banner = () => {
         <main id='content' className='h-[600px] mt-[25px] relative'>
             <div className="container">
                 <div id="content-Row">
-                    <img src={bannerImg} className='w-full h-full' alt="" />
-                    <SearchFilter />
+                  <div className='relative'>
+                    <img src={bannerImg} className='w-full h-full' alt="Banner Image" />
+                    <div className='absolute w-full top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2'>
+                      <p className='text-white text-center'>Find cars for sale and for rent near you</p>
+                      <h1 className='text-white text-[68px] font-bold text-center'>Find Your Desire Product</h1>
+                    </div>
+                  </div>
+                  <SearchFilter />
                 </div>
             </div>
         </main>
