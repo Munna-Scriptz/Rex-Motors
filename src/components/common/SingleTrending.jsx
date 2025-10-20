@@ -6,7 +6,7 @@ import { IoLocationOutline } from 'react-icons/io5'
 
 const SingleTrending = () => {
   return (
-    <div className='w-[360px] relative mx-auto h-[520px] rounded-[24px] py-4 px-4 bg-cover bg-center' style={{backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url(${car})`}}>
+    <div className='md:w-[360px] w-full relative mx-auto h-[520px] rounded-[24px] py-4 px-4 bg-cover bg-center' style={{backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url(${car})`}}>
         
         <h2 className='text-white text-xl font-bold mt-6 w-[340px]'>The Best quality Cars Company will with us.</h2>
         <p className='text-white text-base mt-3 w-[340px]'>Only this week. Don’t miss...</p>

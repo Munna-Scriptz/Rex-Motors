@@ -16,28 +16,28 @@ const SearchFilter = () => {
                         </div>
 
                         {/* ----------------- Search Box --------------------- */}
-                        <div className='flex items-center justify-between bg-white mt-4 rounded-[8px]'>
-                            <div className='w-[210px] p-4 flex flex-col gap-1 cursor-pointer rounded-[12px] hover:bg-gray-200 duration-300'>
+                        <div className='flex lg:flex-nowrap flex-wrap items-center justify-between bg-white mt-4 rounded-[8px]'>
+                            <div className='md:w-[210px] w-full p-4 flex flex-col gap-1 cursor-pointer rounded-[12px] hover:bg-gray-200 duration-300'>
                                 <p className='text-brand font-semibold '>Select Makes</p>
                                 <p className='flex items-center justify-between'>Audi <IoIosArrowDown /></p>
                                 
                             </div>
-                            <div className='w-[210px] p-4 flex flex-col gap-1 cursor-pointer rounded-[12px] hover:bg-gray-200 duration-300'>
+                            <div className='md:w-[210px] w-full p-4 flex flex-col gap-1 cursor-pointer rounded-[12px] hover:bg-gray-200 duration-300'>
                                 <p className='text-brand font-semibold '>Select Models</p>
                                 <p className='flex items-center justify-between'>Q7 <IoIosArrowDown /></p>
                                 
                             </div>
-                            <div className='w-[210px] p-4 flex flex-col gap-1 cursor-pointer rounded-[12px] hover:bg-gray-200 duration-300'>
+                            <div className='md:w-[210px] w-full p-4 flex flex-col gap-1 cursor-pointer rounded-[12px] hover:bg-gray-200 duration-300'>
                                 <p className='text-brand font-semibold '>Year</p>
                                 <p className='flex items-center justify-between'>2 - 2025 <IoIosArrowDown /></p>
                                 
                             </div>
-                            <div className='w-[210px] p-4 flex flex-col gap-1 cursor-pointer rounded-[12px] hover:bg-gray-200 duration-300'>
+                            <div className='md:w-[210px] w-full p-4 flex flex-col gap-1 cursor-pointer rounded-[12px] hover:bg-gray-200 duration-300'>
                                 <p className='text-brand font-semibold '>Select Price</p>
                                 <p className='flex items-center justify-between'>All Prices <IoIosArrowDown /></p>
                                 
                             </div>
-                            <div className='w-[270px] p-4 flex items-center justify-between rounded-[12px] hover:bg-gray-200 duration-300'>
+                            <div className='md:w-[270px] w-full p-4 flex items-center justify-between rounded-[12px] hover:bg-gray-200 duration-300'>
                                 <button className='cursor-pointer'>
                                     <BsSliders className='text-2xl' />
                                 </button>

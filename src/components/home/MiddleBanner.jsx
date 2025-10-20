@@ -11,12 +11,12 @@ import { Link } from 'react-router'
 const MiddleBanner = () => {
     return (
         <>
-            <main id='Middle-Banner' className='mt-[112px] relative h-[560px]'>
+            <main id='Middle-Banner' className='md:mt-[112px] mt-[80px] relative h-[560px]'>
                 <div className="container">
                     <div id="Middle-Banner-Row" className='relative rounded-[12px] flex items-center justify-center h-[500px] w-full bg-cover overflow-hidden' style={{ backgroundImage: `url(${midBan})` }}>
                         {/* ----------- Label  */}
-                        <div className='bg-white absolute top-12 -left-2 rounded-[12px] w-[340px]'>
-                            <h2 className='px-6 py-2 text-brand font-bold text-2xl pl-15'>Mercedes EQS Sedan</h2>
+                        <div className='bg-white absolute top-12 -left-2 rounded-[12px] md:w-[340px] w-[240px]'>
+                            <h2 className='px-6 py-2 text-brand font-bold md:text-2xl text-base md:pl-15 pl-8'>Mercedes EQS Sedan</h2>
                         </div>
 
                         {/* -------------- Car image  */}
@@ -27,12 +27,12 @@ const MiddleBanner = () => {
                 </div>
 
                 {/* ----------------- Floating  */}
-                <section className='absolute w-[850px] left-1/5 mx-auto bottom-0 py-3'>
+                <section className='absolute lg:w-[850px] w-full lg:left-1/5 mx-auto bottom-0 py-3'>
                     <div className="container">
                         <div id="SearchFilter-row" className='bg-transparent px-5 py-3 rounded-[12px] shadow-md'>
 
                             {/* ----------------- Information --------------------- */}
-                            <div className='flex items-center justify-between'>
+                            <div className='flex lg:flex-nowrap flex-wrap gap-y-5 items-center justify-between'>
                                 <div className='flex items-center gap-4 text-white'>
                                     <BsFuelPumpDiesel className='text-3xl'/>
                                     <p className='flex flex-col text-xs'>

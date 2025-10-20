@@ -2,7 +2,6 @@ import React, { useRef } from 'react'
 import CommonHead from '../common/CommonHead'
 import SingleListing from '../common/SingleListing'
 import Slider from 'react-slick';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa6';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 const Listing = () => {
