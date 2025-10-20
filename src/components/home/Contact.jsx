@@ -9,19 +9,19 @@ const Contact = () => {
     <>
         <main id='Contact' className='mt-[82px]'>
             <div className="container">
-                <div id="Contact-Row" className='py-[32px] px-[28px] bg-cover bg-no-repeat rounded-[24px] w-full h-[425px] flex items-start justify-between ' style={{backgroundImage: `url(${contactBg})`}}>
+                <div id="Contact-Row" className='py-[32px] md:px-[28px] px-[20px] bg-cover bg-no-repeat rounded-[24px] w-full md:h-[425px] h-[700px] flex md:flex-nowrap flex-wrap gap-y-10 items-start justify-between ' style={{backgroundImage: `url(${contactBg})`}}>
                     {/* ------------------------ left Side  */}
                     <div>
-                        <h2 className='text-white font-medium text-3xl w-[200px] border-l-[4px] border-[#07D700] pl-8'>Get Support & Buy your Car</h2>
+                        <h2 className='text-white font-medium md:text-3xl text-xl md:w-[200px] border-l-[4px] border-[#07D700] md:pl-8 pl-4'>Get Support & Buy your Car</h2>
                     </div>
 
                     {/* ---------------------- Right Side  */}
                     <div>
-                        <h2 className='text-white text-[34px] font-bold leading-[32px]'>Auto Loan Calculator</h2>
-                        <p className='text-[#ffffffc2] text-base w-[650px] mt-4'>Use this car payment calculator to estimate monthly payments on your next new or used auto oan.</p>
+                        <h2 className='text-white md:text-[34px] text-[26px] font-bold leading-[32px]'>Auto Loan Calculator</h2>
+                        <p className='text-[#ffffffc2] text-base md:w-[650px] mt-4'>Use this car payment calculator to estimate monthly payments on your next new or used auto oan.</p>
 
                         {/* ----------------- Calculate  */}
-                        <div className='mt-10 grid grid-cols-2 flex-2 gap-7'>
+                        <div className='mt-10 grid md:grid-cols-2 flex-2 gap-7'>
                             <div className='bg-white w-[300px] h-[58px] rounded-lg select-none relative'>
                                 <label className='text-sm w-full inline-block absolute top-2 left-4 text-[#818181] leading-[20px]' htmlFor="price">Price ($)</label>
                                 <input className='w-full h-full pl-4 pt-6 outline-none text-brand placeholder:text-brand' type="number" id='price' placeholder='1000'/>

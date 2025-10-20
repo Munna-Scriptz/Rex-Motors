@@ -8,6 +8,7 @@ const Trending = () => {
     
     const settings = {
         dots: true,
+        arrows: false,
         centerMode: true,
         centerPadding: "0px",
         slidesToShow: 3,

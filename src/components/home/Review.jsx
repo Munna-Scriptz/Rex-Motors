@@ -10,12 +10,14 @@ import SingleReview from '../common/SingleReview'
 const Review = () => {
     const settings = {
         dots: true,
+        arrows: false,
         infinite: true,
         autoplay: true,
         speed: 1500,
         autoplaySpeed: 2000,
         slidesToShow: 2,
         slidesToScroll: 1,
+        responsive: [{ breakpoint: 1024, settings: { slidesToShow: 3 } }, { breakpoint: 768, settings: { slidesToShow: 2 } }, { breakpoint: 480, settings: { slidesToShow: 1 } }]
     };
     const sliderRef = useRef(null);
     const MyReviews = [
@@ -55,18 +57,18 @@ const Review = () => {
                 <div className="container">
                     <div id="Review-Row">
                         {/* ---------------------------- Header text ------------------------- */}
-                        <div className='flex items-center justify-between'>
-                            <h2 className='text-white font-bold text-4xl bg-brand w-fit rounded-[8px] py-2 px-8'>What our customers say</h2>
-                            <p className='text-primary w-[315px]'>Rated 4.7 / 5 based on 28,370 reviews Showing our 4 & 5 star reviews</p>
+                        <div className='flex flex-wrap gap-y-3 items-center justify-between'>
+                            <h2 className='text-white font-bold md:text-4xl text-xl bg-brand w-fit rounded-[8px] py-2 px-8'>What our customers say</h2>
+                            <p className='text-primary md:w-[315px]'>Rated 4.7 / 5 based on 28,370 reviews Showing our 4 & 5 star reviews</p>
                         </div>
 
                         {/* ---------------------------- Review  ------------------------- */}
-                        <section className='mt-20 flex items-start justify-between'>
+                        <section className='md:mt-20 mt-12 flex md:flex-row flex-col md:items-start items-center justify-between'>
                             {/* ---------------- Left side  */}
                             <div>
                                 <h2 className='flex flex-col items-center leading-[110%] text-brand text-[64px] font-bold'>4.9 <span className='text-sm'>Based on 5000+ reviews</span></h2>
                                 {/* ---------------- Stars  */}
-                                <div className='flex flex-col mt-8 gap-2'>
+                                <div className='flex flex-col items-center mt-8 gap-2'>
                                     <div className='flex items-center gap-4'>
                                         <div className='text-[#FF8800] text-lg flex items-center gap-1'><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></div>
                                         {/* progress  */}

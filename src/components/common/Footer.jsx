@@ -14,36 +14,37 @@ import { GoMail } from 'react-icons/go'
 
 const Footer = () => {
     return (
-        <footer className='mt-20 lg:mt-[120px] bg-brand z-10 relative'>
-            <div className='max-w-[1400px] mx-auto px-4 relative'>
+        <footer className='mt-20 lg:mt-[120px] bg-brand z-10 relative overflow-hidden'>
+            <div className='container relative'>
                 {/* ----------------Footer Header---------------- */}
-                <div className='pt-15 flex items-center justify-between'>
+                <div className='pt-15 flex flex-wrap items-center md:justify-between justify-center gap-y-5 md:mb-0 mb-10'>
                     <Link to={'/'}>
-                        <img className='w-[220px]' src={Logo} alt="Logo   " />
+                        <img className='w-[220px]' src={Logo} alt="Logo" />
                     </Link>
 
-                    <div className='bg-white h-[62px] rounded-[6px] w-[400px] relative'>
+                    <div className='bg-white h-[62px] rounded-[6px] md:w-[400px] w-full relative'>
                         <GoMail className='absolute top-1/2 -translate-y-1/2 left-4 text-[#9CA3AF] text-xl pointer-events-none' />
-                        <input className='w-full h-full pl-12 outline-none' type="email" placeholder='Enter your email address'/>
+                        <input className='w-full h-full pl-12 outline-none' type="email" placeholder='Enter your email'/>
                         <button className='bg-brand py-2.5 px-5 absolute right-3 cursor-pointer top-2.5 text-white font-bold rounded-[8px]'>SEND</button>
                         <p className='text-white opacity-75 text-xs mt-2'>By subscribing you agree to our Terms & Conditions and Privacy Policy.</p>
                     </div>
                 </div>
-                <div id="FooterRow" className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-7 py-12 lg:py-[65px]'>
+
+                <div id="FooterRow" className='flex items-start flex-wrap justify-between gap-4 py-12 lg:py-[65px] md:mb-0'>
                     {/* ----------------Column 1---------------- */}
-                    <div>
-                        <h2 className='text-white text-lg font-semibold mb-3'>Do You Need Help ?</h2>
-                        <p className='text-sm md:text-base lg:text-sm max-w-xs mt-4 text-[#ffffffc0]'>
+                    <div className='md:mb-0 mb-7 md:w-[200px] w-full'>
+                        <h2 className='text-white text-lg font-semibold'>Do You Need Help ?</h2>
+                        <p className='text-sm md:text-base lg:text-sm max-w-xs md:mt-4 mt-2 text-[#ffffffc0]'>
                             Autoseligen syr. Nek diarask fröbomba. Nör antipol kynoda nynat. Pressa fåmoska.
                         </p>
                         {/* --------------- Buttons  */}
-                        <div className='w-[200px] flex items-center gap-3 bg-white px-2 py-2 rounded-[10px] mt-10'>
+                        <div className='md:w-[200px] w-full flex items-center gap-3 bg-white px-2 py-2 rounded-[10px] mt-10'>
                             <div className='text-lg bg-brand w-[32px] h-[32px] text-white rounded-full flex items-center justify-center'>
                                 <FiPhoneCall />
                             </div>
                             <h2 className='flex flex-col text-[#0120698c] text-xs leading-[13px]'>Monday-Friday <span className='text-brand font-bold text-lg'>0 800 300-353</span></h2>
                         </div>
-                        <div className='w-[200px] flex items-center gap-3 bg-white px-2 py-2 rounded-[10px] mt-5'>
+                        <div className='md:w-[200px] w-full flex items-center gap-3 bg-white px-2 py-2 rounded-[10px] mt-5'>
                             <div className='text-lg bg-brand w-[32px] h-[32px] text-white rounded-full flex items-center justify-center'>
                                 <IoMailOutline />
                             </div>
@@ -92,9 +93,9 @@ const Footer = () => {
 
                     {/* ----------------Column 5---------------- */}
                     <div>
-                        <h2 className='font-bold text-lg lg:text-[21px] text-white mb-3'>Download our app</h2>
-                        <p className='text-[#ffffff98] mt-2 lg:mb-[26px] text-sm'>Save $3 with App New User Only</p>
-                        <div className='flex items-center gap-2'>
+                        <h2 className='font-bold text-lg lg:text-[21px] text-white'>Download our app</h2>
+                        <p className='text-[#ffffff98] md:mt-2 mt-1 lg:mb-[26px] text-sm'>Save $3 with App New User Only</p>
+                        <div className='flex items-center gap-2 md:mt-0 mt-7'>
                             <div className='flex flex-col gap-3 w-full'>
                                 <Link to={'/'} className="bg-gray-100 flex py-3 px-5 rounded-lg items-center cursor-pointer hover:bg-gray-200 focus:outline-none">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-6 h-6" viewBox="0 0 512 512">
@@ -122,7 +123,7 @@ const Footer = () => {
 
                             </div>
                         </div>
-                        <p className='text-[#ffffffbb] mt-6 lg:mb-[20px] text-sm'>Follow us on social media:</p>
+                        <p className='text-[#ffffffbb] mt-6 md::mb-[20px] mb-3 text-sm'>Follow us on social media:</p>
                         <div className='flex items-center gap-3 lg:gap-[10px] flex-wrap'>
                             <Link to={'/'} className='w-13 h-13 text-2xl text-[#1877F2] rounded-[4px] bg-white flex items-center justify-center hover:text-[#2F57EF] duration-300 cursor-pointer'>
                                 <FaFacebookF />
@@ -141,10 +142,10 @@ const Footer = () => {
                 </div>
                 {/* ---------Bottom Section--------- */}
                 <div className='border-t border-[#FFFFFF33]'>
-                    <div className="container px-4 lg:px-0 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0 py-6 lg:py-[30px]">
+                    <div className="container flex flex-col-reverse md:flex-row items-center justify-between gap-4 md:gap-0 px-0 py-6 lg:py-[30px]">
                         <div>
                             <h2 className='text-white text-sm md:text-base'>© Copyright 2023 | Developed By <Link className='underline underline-offset-4' to={'https://munna-scriptz.vercel.app/'}>Munna-Scriptz</Link></h2>
-                            <h2 className='text-white text-sm md:text-base mt-1'>Figma made By <Link className='underline underline-offset-4' to={''}>Username</Link></h2>
+                            <h2 className='text-white text-sm md:text-base mt-1 md:mb-0 mb-4'>Figma made By <Link className='underline underline-offset-4' to={''}>Username</Link></h2>
                             <img className='mt-2.5' src={paymentIcon} alt="Payments" />
                         </div>
                         <h2 className='text-white text-[40px] font-bold uppercase tracking-wider'>REX MOTORS</h2>
@@ -155,6 +156,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+                
             {/* ----------------------------- Aura Decorations -------------------------- */}
             <div className='w-[450px] h-[500px] bg-[#935EFF80] rounded-full blur-[130px] absolute top-20 -left-4 -z-10 pointer-events-none'></div>
             <div className='w-[450px] h-[500px] bg-[#935EFF80] rounded-full blur-[140px] absolute top-60 -right-12 -z-10 pointer-events-none'></div>

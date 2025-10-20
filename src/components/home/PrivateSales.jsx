@@ -12,7 +12,7 @@ const PrivateSales = () => {
                     {/* ----------------------- Left Side -------------------- */}
                     <div className='relative z-10'>
                         <h2 className='text-white font-bold text-[38px] leading-[100%]'>Private Sales</h2>
-                        <p className='text-[#FFFFFF99] font-medium w-[580px] text-lg mt-5 mb-8'>Buy or sell fine art, decorative objects, jewelry, and watches on your schedule.</p>
+                        <p className='text-[#FFFFFF99] font-medium md:w-[580px] text-lg mt-5 mb-8'>Buy or sell fine art, decorative objects, jewelry, and watches on your schedule.</p>
                         <Link to={'/'} className='bg-white text-brand font-bold text-lg px-4 pr-7 group py-1 hover:bg-primary duration-300 hover:text-white rounded-full flex items-center w-fit relative'>
                             Go
                             <div className='w-[24px] h-[24px] bg-brand text-white rounded-full group-hover:bg-white duration-300 group-hover:text-brand flex items-center justify-center text-lg border-2 border-white absolute top-[5px] right-[-5px]'><MdArrowOutward/></div>
@@ -22,7 +22,7 @@ const PrivateSales = () => {
                     </div>
 
                     {/* --------------------- RIght side ----------------------- */}
-                    <img className='w-[560px] h-full rounded-[24px] absolute top-0 right-0' src={pvImg} alt="Car Image" />
+                    <img className='w-[560px] h-full rounded-[24px] absolute top-0 right-0 md:block hidden' src={pvImg} alt="Car Image" />
 
                     {/* --------------------- Glow ----------------------- */}
 

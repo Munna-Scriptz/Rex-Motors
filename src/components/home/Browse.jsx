@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 const Browse = () => {
     const settings = {
     dots: true,
+    arrows: false,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 2,

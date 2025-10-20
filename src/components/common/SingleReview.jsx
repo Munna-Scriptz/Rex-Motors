@@ -3,7 +3,7 @@ import { FaQuoteLeft } from 'react-icons/fa6'
 
 const SingleReview = ({item}) => {
     return (
-        <div className='lg:p-[48px] p-[38px]'>
+        <div className='lg:p-[48px] p-[8px] lg:mt-0 mt-8'>
             <div className='flex items-center justify-between'>
                 <div className='flex items-center gap-4 '>
                     <img src={item.image} alt="Pfp" />

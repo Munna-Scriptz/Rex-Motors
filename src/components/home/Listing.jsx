@@ -7,7 +7,7 @@ import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 const Listing = () => {
     const settings = {
         dots: true,
-        arrows: true,
+        arrows: false,
         infinite: true,
         speed: 800,
         slidesToShow: 3,
