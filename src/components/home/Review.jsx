@@ -53,19 +53,19 @@ const Review = () => {
 
     return (
         <>
-            <main id='Review' className='mt-[112px]'>
+            <main id='Review' className='mt-[112px] overflow-hidden'>
                 <div className="container">
                     <div id="Review-Row">
                         {/* ---------------------------- Header text ------------------------- */}
                         <div className='flex flex-wrap gap-y-3 items-center justify-between'>
-                            <h2 className='text-white font-bold md:text-4xl text-xl bg-brand w-fit rounded-[8px] py-2 px-8'>What our customers say</h2>
-                            <p className='text-primary md:w-[315px]'>Rated 4.7 / 5 based on 28,370 reviews Showing our 4 & 5 star reviews</p>
+                            <h2 className='text-white font-bold md:text-4xl text-xl bg-brand w-fit rounded-[8px] py-2 px-8' data-aos="fade-right">What our customers say</h2>
+                            <p className='text-primary md:w-[315px]' data-aos="fade-left">Rated 4.7 / 5 based on 28,370 reviews Showing our 4 & 5 star reviews</p>
                         </div>
 
                         {/* ---------------------------- Review  ------------------------- */}
                         <section className='md:mt-20 mt-12 flex md:flex-row flex-col md:items-start items-center justify-between'>
                             {/* ---------------- Left side  */}
-                            <div>
+                            <div data-aos="fade-right">
                                 <h2 className='flex flex-col items-center leading-[110%] text-brand text-[64px] font-bold'>4.9 <span className='text-sm'>Based on 5000+ reviews</span></h2>
                                 {/* ---------------- Stars  */}
                                 <div className='flex flex-col items-center mt-8 gap-2'>
@@ -109,7 +109,7 @@ const Review = () => {
                             </div>
 
                             {/* --------------- Right Side  */}
-                            <div id='SliderBoxShadow' className="slider-container lg:w-[900px] w-full shrink-0">
+                            <div id='SliderBoxShadow' className="slider-container lg:w-[900px] w-full shrink-0" data-aos="fade-left">
                                 <Slider ref={sliderRef} {...settings}>
                                     {
                                         MyReviews.map((item, i) => (

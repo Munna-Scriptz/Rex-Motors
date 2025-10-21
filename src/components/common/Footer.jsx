@@ -18,33 +18,33 @@ const Footer = () => {
             <div className='container relative'>
                 {/* ----------------Footer Header---------------- */}
                 <div className='pt-15 flex flex-wrap items-center md:justify-between justify-center gap-y-5 md:mb-0 mb-10'>
-                    <Link to={'/'}>
+                    <Link to={'/'} data-aos="fade-up">
                         <img className='w-[220px]' src={Logo} alt="Logo" />
                     </Link>
 
-                    <div className='bg-white h-[62px] rounded-[6px] md:w-[400px] w-full relative'>
+                    <div className='bg-white h-[62px] rounded-[6px] md:w-[400px] w-full relative' data-aos="fade-up">
                         <GoMail className='absolute top-1/2 -translate-y-1/2 left-4 text-[#9CA3AF] text-xl pointer-events-none' />
                         <input className='w-full h-full pl-12 outline-none' type="email" placeholder='Enter your email'/>
                         <button className='bg-brand py-2.5 px-5 absolute right-3 cursor-pointer top-2.5 text-white font-bold rounded-[8px]'>SEND</button>
-                        <p className='text-white opacity-75 text-xs mt-2'>By subscribing you agree to our Terms & Conditions and Privacy Policy.</p>
+                        <p className='text-white opacity-75 text-xs mt-2' data-aos="fade-up">By subscribing you agree to our Terms & Conditions and Privacy Policy.</p>
                     </div>
                 </div>
 
                 <div id="FooterRow" className='flex items-start flex-wrap justify-between gap-4 py-12 lg:py-[65px] md:mb-0'>
                     {/* ----------------Column 1---------------- */}
                     <div className='md:mb-0 mb-7 md:w-[200px] w-full'>
-                        <h2 className='text-white text-lg font-semibold'>Do You Need Help ?</h2>
-                        <p className='text-sm md:text-base lg:text-sm max-w-xs md:mt-4 mt-2 text-[#ffffffc0]'>
+                        <h2 className='text-white text-lg font-semibold' data-aos="fade-up">Do You Need Help ?</h2>
+                        <p className='text-sm md:text-base lg:text-sm max-w-xs md:mt-4 mt-2 text-[#ffffffc0]' data-aos="fade-up">
                             Autoseligen syr. Nek diarask fröbomba. Nör antipol kynoda nynat. Pressa fåmoska.
                         </p>
                         {/* --------------- Buttons  */}
-                        <div className='md:w-[200px] w-full flex items-center gap-3 bg-white px-2 py-2 rounded-[10px] mt-10'>
-                            <div className='text-lg bg-brand w-[32px] h-[32px] text-white rounded-full flex items-center justify-center'>
+                        <div className='md:w-[200px] w-full flex items-center gap-3 bg-white px-2 py-2 rounded-[10px] mt-10' data-aos="fade-up">
+                            <div className='text-lg bg-brand w-[32px] h-[32px] text-white rounded-full flex items-center justify-center' >
                                 <FiPhoneCall />
                             </div>
                             <h2 className='flex flex-col text-[#0120698c] text-xs leading-[13px]'>Monday-Friday <span className='text-brand font-bold text-lg'>0 800 300-353</span></h2>
                         </div>
-                        <div className='md:w-[200px] w-full flex items-center gap-3 bg-white px-2 py-2 rounded-[10px] mt-5'>
+                        <div className='md:w-[200px] w-full flex items-center gap-3 bg-white px-2 py-2 rounded-[10px] mt-5' data-aos="fade-up">
                             <div className='text-lg bg-brand w-[32px] h-[32px] text-white rounded-full flex items-center justify-center'>
                                 <IoMailOutline />
                             </div>
@@ -54,10 +54,10 @@ const Footer = () => {
 
                     {/* ----------------Column 2---------------- */}
                     <div>
-                        <h2 className='font-bold text-lg lg:text-[21px] text-white mb-5 lg:mb-[26px]'>Help</h2>
+                        <h2 className='font-bold text-lg lg:text-[21px] text-white mb-5 lg:mb-[26px]' data-aos="fade-up">Help</h2>
                         <div className='flex flex-col gap-3 lg:gap-[16px]'>
                             {["Buying Guides", "Selling Guides", "Shipping", "Get an estimate"].map((item, i) => (
-                                <div key={i} className='text-white text-sm lg:text-base flex items-center gap-3'>
+                                <div key={i} className='text-white text-sm lg:text-base flex items-center gap-3' data-aos="fade-up">
                                     <FaArrowRight className='shrink-0' />
                                     <Link to={'/'}>{item}</Link>
                                 </div>
@@ -67,10 +67,10 @@ const Footer = () => {
 
                     {/* ----------------Column 3---------------- */}
                     <div>
-                        <h2 className='font-bold text-lg lg:text-[21px] text-white mb-5 lg:mb-[26px]'>Account</h2>
+                        <h2 className='font-bold text-lg lg:text-[21px] text-white mb-5 lg:mb-[26px]' data-aos="fade-up">Account</h2>
                         <div className='flex flex-col gap-3 lg:gap-[12px]'>
                             {["My Account", "Login / Register", "Cart", "Wishlist", "Private Sales"].map((item, i) => (
-                                <div key={i} className='text-white text-sm md:text-base lg:text-[17px] flex items-center gap-3'>
+                                <div key={i} className='text-white text-sm md:text-base lg:text-[17px] flex items-center gap-3' data-aos="fade-up">
                                     <FaArrowRight className='shrink-0' />
                                     <Link to={'/'}>{item}</Link>
                                 </div>
@@ -80,10 +80,10 @@ const Footer = () => {
 
                     {/* ----------------Column 4---------------- */}
                     <div>
-                        <h2 className='font-bold text-lg lg:text-[21px] text-white mb-5 lg:mb-[26px]'>Quick Link</h2>
+                        <h2 className='font-bold text-lg lg:text-[21px] text-white mb-5 lg:mb-[26px]' data-aos="fade-up">Quick Link</h2>
                         <div className='flex flex-col gap-3 lg:gap-[12px]'>
                             {["Privacy Policy", "Terms Of Use", "FAQ", "Contact"].map((item, i) => (
-                                <div key={i} className='text-white text-sm md:text-base lg:text-[17px] flex items-center gap-3'>
+                                <div key={i} className='text-white text-sm md:text-base lg:text-[17px] flex items-center gap-3' data-aos="fade-up">
                                     <FaArrowRight className='shrink-0' />
                                     <Link to={'/'}>{item}</Link>
                                 </div>
@@ -93,10 +93,10 @@ const Footer = () => {
 
                     {/* ----------------Column 5---------------- */}
                     <div>
-                        <h2 className='font-bold text-lg lg:text-[21px] text-white'>Download our app</h2>
-                        <p className='text-[#ffffff98] md:mt-2 mt-1 lg:mb-[26px] text-sm'>Save $3 with App New User Only</p>
+                        <h2 className='font-bold text-lg lg:text-[21px] text-white' data-aos="fade-up">Download our app</h2>
+                        <p className='text-[#ffffff98] md:mt-2 mt-1 lg:mb-[26px] text-sm' data-aos="fade-up">Save $3 with App New User Only</p>
                         <div className='flex items-center gap-2 md:mt-0 mt-7'>
-                            <div className='flex flex-col gap-3 w-full'>
+                            <div className='flex flex-col gap-3 w-full' data-aos="fade-up">
                                 <Link to={'/'} className="bg-gray-100 flex py-3 px-5 rounded-lg items-center cursor-pointer hover:bg-gray-200 focus:outline-none">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-6 h-6" viewBox="0 0 512 512">
                                         <path d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"></path>
@@ -117,24 +117,24 @@ const Footer = () => {
                                     </span>
                                 </Link>
                             </div>
-                            <div className='flex items-center flex-col gap-3'>
+                            <div className='flex items-center flex-col gap-3' data-aos="fade-up">
                                 <img className='w-[80px]' src={qrCode} alt="Qr code" />
                                 <img className='w-[80px]' src={qrCode} alt="Qr code" />
 
                             </div>
                         </div>
-                        <p className='text-[#ffffffbb] mt-6 md::mb-[20px] mb-3 text-sm'>Follow us on social media:</p>
+                        <p className='text-[#ffffffbb] mt-6 md::mb-[20px] mb-3 text-sm' data-aos="fade-up">Follow us on social media:</p>
                         <div className='flex items-center gap-3 lg:gap-[10px] flex-wrap'>
-                            <Link to={'/'} className='w-13 h-13 text-2xl text-[#1877F2] rounded-[4px] bg-white flex items-center justify-center hover:text-[#2F57EF] duration-300 cursor-pointer'>
+                            <Link to={'/'} className='w-13 h-13 text-2xl text-[#1877F2] rounded-[4px] bg-white flex items-center justify-center hover:text-[#2F57EF] duration-300 cursor-pointer' data-aos="fade-up">
                                 <FaFacebookF />
                             </Link>
-                            <Link to={'/'} className='w-13 h-13 text-2xl text-[#fd3636] rounded-[4px] bg-white flex items-center justify-center hover:text-[#2F57EF] duration-300 cursor-pointer'>
+                            <Link to={'/'} className='w-13 h-13 text-2xl text-[#fd3636] rounded-[4px] bg-white flex items-center justify-center hover:text-[#2F57EF] duration-300 cursor-pointer' data-aos="fade-up">
                                 <IoLogoInstagram />
                             </Link>
-                            <Link to={'/'} className='w-13 h-13 text-2xl text-[#1877F2] rounded-[4px] bg-white flex items-center justify-center hover:text-[#2F57EF] duration-300 cursor-pointer'>
+                            <Link to={'/'} className='w-13 h-13 text-2xl text-[#1877F2] rounded-[4px] bg-white flex items-center justify-center hover:text-[#2F57EF] duration-300 cursor-pointer' data-aos="fade-up">
                                 <FaTwitter/>
                             </Link>
-                            <Link to={'/'} className='w-13 h-13 text-2xl text-[#db2929] rounded-[4px] bg-white flex items-center justify-center hover:text-[#2F57EF] duration-300 cursor-pointer'>
+                            <Link to={'/'} className='w-13 h-13 text-2xl text-[#db2929] rounded-[4px] bg-white flex items-center justify-center hover:text-[#2F57EF] duration-300 cursor-pointer' data-aos="fade-up">
                                 <FaPinterestP />
                             </Link>
                         </div>
@@ -144,12 +144,12 @@ const Footer = () => {
                 <div className='border-t border-[#FFFFFF33]'>
                     <div className="container flex flex-col-reverse md:flex-row items-center justify-between gap-4 md:gap-0 px-0 py-6 lg:py-[30px]">
                         <div>
-                            <h2 className='text-white text-sm md:text-base'>© Copyright 2023 | Developed By <Link className='underline underline-offset-4' to={'https://munna-scriptz.vercel.app/'}>Munna-Scriptz</Link></h2>
-                            <h2 className='text-white text-sm md:text-base mt-1 md:mb-0 mb-4'>Figma made By <Link className='underline underline-offset-4' to={''}>Username</Link></h2>
-                            <img className='mt-2.5' src={paymentIcon} alt="Payments" />
+                            <h2 className='text-white text-sm md:text-base' data-aos="fade-up" data-aos-offset="0">© Copyright 2023 | Developed By <Link className='underline underline-offset-4' to={'https://munna-scriptz.vercel.app/'}>Munna-Scriptz</Link></h2>
+                            <h2 className='text-white text-sm md:text-base mt-1 md:mb-0 mb-4' data-aos="fade-up">Figma made By <Link className='underline underline-offset-4' to={''}>Username</Link></h2>
+                            <img className='mt-2.5' src={paymentIcon} alt="Payments" data-aos="fade-up" data-aos-offset="0"/>
                         </div>
-                        <h2 className='text-white text-[40px] font-bold uppercase tracking-wider'>REX MOTORS</h2>
-                        <div className='text-white text-sm md:text-base flex flex-wrap items-center gap-4 lg:gap-[23px]'>
+                        <h2 className='text-white text-[40px] font-bold uppercase tracking-wider' data-aos="fade-up" data-aos-offset="0">REX MOTORS</h2>
+                        <div className='text-white text-sm md:text-base flex flex-wrap items-center gap-4 lg:gap-[23px]' data-aos="fade-up" data-aos-offset="0">
                             <Link className='underline underline-offset-4' to={'/'}>Terms & Condition</Link>
                             <Link className='underline underline-offset-4' to={'/'}>Privacy Policy</Link>
                             <Link className='underline underline-offset-4' to={'/'}>Contact Us</Link>

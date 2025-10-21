@@ -8,16 +8,16 @@ const Navbar = () => {
       <header className='py-[14px] bg-brand shadow-[inset_0px_-50px_36px_-28px_rgba(255,255,255,0.15)]' data-aos="fade-down" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1500">
         <div className="container">
           <div id='Header-Row' className='flex items-center justify-between'>
-            <h2 className='font-bold text-white'>Welcome To Worldwide Megamart</h2>
+            <h2 className='font-bold text-white' data-aos="fade-down" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="2000">Welcome To Worldwide Megamart</h2>
 
             <div className='flex items-center gap-4.5'>
-              <Link className='text-white font-bold' to={'/'}>Sign In</Link>
-              <span className='w-[1px] bg-white inline-block h-[18px]'></span>
+              <Link className='text-white font-bold' to={'/'} data-aos="fade-down" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="2400">Sign In</Link>
+              <span className='w-[1px] bg-white inline-block h-[18px]' data-aos="fade-down" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="2400"></span>
 
-              <Link className='text-white font-bold' to={'/'}>How To Sell</Link>
-              <span className='w-[1px] bg-white inline-block h-[18px]'></span>
+              <Link className='text-white font-bold' to={'/'} data-aos="fade-down" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="2600">How To Sell</Link>
+              <span className='w-[1px] bg-white inline-block h-[18px]' data-aos="fade-down" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="2600"></span>
 
-              <div className='w-[106px] h-[28px] bg-white px-2 flex items-center justify-center rounded-[5px] cursor-pointer'>
+              <div className='w-[106px] h-[28px] bg-white px-2 flex items-center justify-center rounded-[5px] cursor-pointer' data-aos="fade-down" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="2800">
                 <select className='text-white bg-brand w-full cursor-pointer'>
                   <option value="English">English</option>
                   <option value="Bangla">Bangla</option>

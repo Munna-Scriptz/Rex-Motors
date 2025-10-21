@@ -6,9 +6,9 @@ import { BsSliders } from 'react-icons/bs'
 const SearchFilter = () => {
     return (
         <>
-            <section className='absolute md:bottom-0 -bottom-10 left-0 w-full py-3' data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="2200">
+            <section className='absolute md:bottom-0 -bottom-10 left-0 w-full py-3' >
                 <div className="container">
-                    <div id="SearchFilter-row" className='bg-transparent px-5 py-3 rounded-[12px] shadow-md'>
+                    <div id="SearchFilter-row" className='bg-transparent px-5 py-3 rounded-[12px] shadow-md' data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="2200">
                         <div className='flex items-center gap-6'>
                             <button className='text-white text-sm font-medium border-b border-white pb-3 cursor-pointer'>All</button>
                             <button className='text-white text-sm font-medium pb-3 cursor-pointer'>New</button>

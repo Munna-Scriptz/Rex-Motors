@@ -12,15 +12,15 @@ const ResNav = () => {
     <>
     <nav className='lg:hidden block z-50 py-[16px]'>
         <div className="container">
-            <div id="NavBar_Row" className='flex items-center justify-between' data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                <div className='w-[110px]'>
+            <div id="NavBar_Row" className='flex items-center justify-between' >
+                <div className='w-[110px]' data-aos="fade-down" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="2000">
                     <Link href={'/'}><img src={Logo} alt="Logo" /></Link>
                 </div>
-                {/* -----------Search--------  */}
+                {/* -----------Links--------  */}
                 <div className='flex items-center gap-4'>
                     <ul className='flex items-center text-[23px] text-second font-roboto'>
-                            <li><button className='w-[40px] cursor-pointer h-[40px] flex items-center justify-center hover:bg-primary hover:text-white rounded-[4px] duration-300'><IoBagHandleOutline /></button></li>
-                            <li onClick={()=>handleDelay()}><Link className='w-[40px] h-[40px] relative flex items-center justify-center hover:bg-primary hover:text-white rounded-[4px] duration-300' href={'/cart'}>
+                            <li><Link to={'/'} className='w-[40px] cursor-pointer h-[40px] flex items-center justify-center hover:bg-primary hover:text-white rounded-[4px] duration-300' data-aos="fade-down" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="2400"><IoBagHandleOutline /></Link></li>
+                            <li><Link className='w-[40px] h-[40px] relative flex items-center justify-center hover:bg-primary hover:text-white rounded-[4px] duration-300' data-aos="fade-down" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="2600">
                                 <MdOutlineShoppingCart />
                                 <div className='w-[16px] h-[16px] absolute top-1.5 right-1.5 bg-[#BA1A1A] rounded-full flex items-center justify-center text-white font-medium text-[11px] leading-[16px]'>
                                     <p>3</p>
@@ -28,7 +28,7 @@ const ResNav = () => {
                             </Link></li>
                         </ul>
                     {/* -----------Nav button--------  */}
-                    <div className='flex items-center gap-5 text-2xl text-black'>
+                    <div className='flex items-center gap-5 text-2xl text-black' data-aos="fade-down" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="2800">
                         <FaBarsStaggered onClick={()=>SetValue(!Value)} className='cursor-pointer'/>
                     </div>
                 </div>

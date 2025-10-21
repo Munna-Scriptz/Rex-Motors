@@ -5,7 +5,7 @@ import { CiHeart } from 'react-icons/ci'
 
 const SinglePurchase = ({img,title,EsPrice,date}) => {
     return (
-        <div className='w-[360px] rounded-[24px] border-1 border-[#D8D8D8]'>
+        <div className='md:w-[360px] w-full rounded-[24px] border-1 border-[#D8D8D8]' data-aos="fade-up">
             {/* ---------------------- Image section  */}
             <div className='relative '>
                 <img className='rounded-t-[12px] w-full' src={img} alt="Car image" />
