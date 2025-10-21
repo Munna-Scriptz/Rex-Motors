@@ -76,20 +76,25 @@ const MiddleBanner = () => {
             <section className='mt-12 md:mt-[80px]'>
                 <div className="container">
                     <div id='Discover-Row' className='flex flex-col md:flex-row items-stretch md:items-center gap-4'>
-                        <Link to={'/'} className='bg-brand py-4 px-4 w-full md:w-1/2 rounded-[8px] flex items-center justify-between cursor-pointer hover:-translate-y-3 duration-300' data-aos="fade-right">
-                            <div>
-                                <p className='text-white opacity-80 font-medium text-sm mb-1'>DISCOVER WHAT YOU LOVE</p>
-                                <h2 className='text-white font-bold text-xl'>Browse All Art & Objects</h2>
-                            </div>
-                            <MdKeyboardArrowRight className='text-white text-2xl'/>
-                        </Link>
-                        <Link to={'/'} className='bg-brand py-4 px-4 w-full md:w-1/2 rounded-[8px] flex items-center justify-between cursor-pointer hover:-translate-y-3 duration-300' data-aos="fade-left">
-                            <div>
-                                <p className='text-white opacity-80 font-medium text-sm mb-1'>PEOPLE OF INTEREST</p>
-                                <h2 className='text-white font-bold text-xl'>Featured artists and makers</h2>
-                            </div>
-                            <MdKeyboardArrowRight className='text-white text-2xl'/>
-                        </Link>
+                        <div className='w-full md:w-1/2' data-aos="fade-right">
+                            <Link to={'/'} className='bg-brand py-4 px-4 rounded-[8px] flex items-center justify-between cursor-pointer hover:-translate-y-3 duration-300'>
+                                <div>
+                                    <p className='text-white opacity-80 font-medium text-sm mb-1'>DISCOVER WHAT YOU LOVE</p>
+                                    <h2 className='text-white font-bold text-xl'>Browse All Art & Objects</h2>
+                                </div>
+                                <MdKeyboardArrowRight className='text-white text-2xl'/>
+                            </Link>
+                        </div>
+                        <div className='w-full md:w-1/2' data-aos="fade-left">
+                            <Link to={'/'} className='bg-brand py-4 px-4 rounded-[8px] flex items-center justify-between cursor-pointer hover:-translate-y-3 duration-300' >
+                                <div>
+                                    <p className='text-white opacity-80 font-medium text-sm mb-1'>PEOPLE OF INTEREST</p>
+                                    <h2 className='text-white font-bold text-xl'>Featured artists and makers</h2>
+                                </div>
+                                <MdKeyboardArrowRight className='text-white text-2xl'/>
+                            </Link>
+
+                        </div>
                     </div>
                 </div>
             </section>

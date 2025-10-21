@@ -6,7 +6,7 @@ import { CarData } from '../../assets/CarData/CarData'
 const Purchase = () => {
     return (
         <>
-            <main id='Purchase' className='mt-[112px]'>
+            <main id='Purchase' className='mt-[112px] overflow-hidden'>
                 <div className="container">
                     <div id="Purchase-Row">
                         {/* --------------------- Common Head ------------------------ */}
