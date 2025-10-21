@@ -6,7 +6,7 @@ import car from '../../assets/singleLIst.jpg'
 
 const SingleAuction = ({img,title,type,model,date}) => {
     return (
-        <div className='md:w-[360px] w-full rounded-[24px] border-1 border-[#D8D8D8]'>
+        <div className='md:w-[360px] w-full rounded-[24px] border-1 border-[#D8D8D8]' data-aos="fade-up">
 
 
             {/* ---------------------- Image section  */}

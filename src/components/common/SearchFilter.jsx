@@ -6,7 +6,7 @@ import { BsSliders } from 'react-icons/bs'
 const SearchFilter = () => {
     return (
         <>
-            <section className='absolute md:bottom-0 -bottom-10 left-0 w-full py-3'>
+            <section className='absolute md:bottom-0 -bottom-10 left-0 w-full py-3' data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="2200">
                 <div className="container">
                     <div id="SearchFilter-row" className='bg-transparent px-5 py-3 rounded-[12px] shadow-md'>
                         <div className='flex items-center gap-6'>

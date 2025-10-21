@@ -16,16 +16,16 @@ const Brands = () => {
 
                     {/* -------------------- Brands  */}
                     <div className='mt-[70px] flex flex-wrap gap-y-3 items-center justify-between'>
-                        <div className='md:w-[250px] w-[160px] flex items-center justify-center md:py-[65px] py-[16px] md:px-[44px] px-[16px] rounded-[12px] border-1 border-[#E9E9E9]'>
+                        <div className='md:w-[250px] w-[160px] flex items-center justify-center md:py-[65px] py-[16px] md:px-[44px] px-[16px] rounded-[12px] border-1 border-[#E9E9E9]' data-aos="fade-up">
                             <img src={brand1} alt="Brand Logo" />
                         </div>
-                        <div className='md:w-[250px] w-[160px] flex items-center justify-center md:py-[65px] py-[16px] md:px-[44px] px-[16px] rounded-[12px] border-1 border-[#E9E9E9]'>
+                        <div className='md:w-[250px] w-[160px] flex items-center justify-center md:py-[65px] py-[16px] md:px-[44px] px-[16px] rounded-[12px] border-1 border-[#E9E9E9]' data-aos="fade-up">
                             <img src={brand2} alt="Brand Logo" />
                         </div>
-                        <div className='md:w-[250px] w-[160px] flex items-center justify-center md:py-[65px] py-[16px] md:px-[44px] px-[16px] rounded-[12px] border-1 border-[#E9E9E9]'>
+                        <div className='md:w-[250px] w-[160px] flex items-center justify-center md:py-[65px] py-[16px] md:px-[44px] px-[16px] rounded-[12px] border-1 border-[#E9E9E9]' data-aos="fade-up">
                             <img src={brand3} alt="Brand Logo" />
                         </div>
-                        <div className='md:w-[250px] w-[160px] flex items-center justify-center md:py-[65px] py-[16px] md:px-[44px] px-[16px] rounded-[12px] border-1 border-[#E9E9E9]'>
+                        <div className='md:w-[250px] w-[160px] flex items-center justify-center md:py-[65px] py-[16px] md:px-[44px] px-[16px] rounded-[12px] border-1 border-[#E9E9E9]' data-aos="fade-up">
                             <img src={brand4} alt="Brand Logo" />
                         </div>
                     </div>

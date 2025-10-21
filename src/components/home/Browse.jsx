@@ -21,14 +21,14 @@ const Browse = () => {
 
   return (
     <>
-        <main id='Browse' className='mt-[100px]'>
+        <main id='Browse' className='mt-[100px] overflow-hidden'>
             <div className="container">
                 <div id="Browse-Row">
                     {/* ----------------Common Head--------------------- */}
                     <CommonHead text={'Browse By Type'} linkName={'View All'}/>
 
                     {/* ---------------- Slider--------------------- */}
-                    <section className='mt-10'>
+                    <section className='mt-10' data-aos="fade-up" data-aos-easing="ease-in-sine">
                         <Slider {...settings}>
                             {CarData.map((item , i)=>(
                                 <SingleCar key={i} img={item.image} type={item.type} title={item.title} desc={item.description} />

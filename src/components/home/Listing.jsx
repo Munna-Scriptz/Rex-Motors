@@ -25,14 +25,14 @@ const Listing = () => {
                 <div id="Listing-Row">
                     {/* ---------------------- Common head  */}
                     <CommonHead text={'Featured Listings'} linkName={'View All'} />
-                    <div className='mt-13 flex items-center gap-10'>
+                    <div className='mt-13 flex items-center gap-10' data-aos="fade-up">
                         <button className='text-primary font-medium border-b border-[#405FF2] pb-2 cursor-pointer'>In Stock</button>
                         <button className='text-primary font-medium pb-2 cursor-pointer'>New Cars</button>
                         <button className='text-primary font-medium pb-2 cursor-pointer'>Used Cars</button>
                     </div>
 
                     {/* ------------------------ Slider  */}
-                    <div className='mt-10'>
+                    <div className='mt-10' data-aos="fade-up">
                         <Slider ref={sliderRef} {...settings}>
                             {CarData.map((item , i)=>(
                                 <SingleListing key={i} img={item.image} type={item.type} title={item.title} desc={item.description} speed={item.speed} fuel={item.fuel} func={item.functionality} price={item.price} />
