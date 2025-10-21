@@ -8,7 +8,7 @@ import brand4 from '../../assets/brand4.png'
 const Brands = () => {
   return (
     <>
-        <main id='Brands' className='mt-[122px]'>
+        <main id='Brands' className='mt-[122px] overflow-hidden'>
             <div className="container">
                 <div id="Brands-Row">
                     {/* ------------------- common Head  */}

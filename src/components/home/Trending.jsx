@@ -21,7 +21,7 @@ const Trending = () => {
     }
     return (
         <>
-            <main id='Trending' className='mt-[122px]'>
+            <main id='Trending' className='mt-[122px] overflow-hidden'>
                 <div className="container">
                     <div id="Trending-Row">
                         {/* --------------------------- Header --------------------- */}

@@ -20,7 +20,7 @@ const Listing = () => {
 
   return (
     <>
-        <main id='Listing' className='md:mt-[112px] mt-[80px]'>
+        <main id='Listing' className='md:mt-[112px] mt-[80px] overflow-hidden'>
             <div className="container">
                 <div id="Listing-Row">
                     {/* ---------------------- Common head  */}

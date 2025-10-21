@@ -73,7 +73,7 @@ const MiddleBanner = () => {
             </main>
 
             {/* ------------------------ Discover ------------------------ */}
-            <section className='mt-12 md:mt-[80px]'>
+            <section className='mt-12 md:mt-[80px] overflow-hidden'>
                 <div className="container">
                     <div id='Discover-Row' className='flex flex-col md:flex-row items-stretch md:items-center gap-4'>
                         <div className='w-full md:w-1/2' data-aos="fade-right">

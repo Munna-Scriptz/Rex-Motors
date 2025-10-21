@@ -6,7 +6,7 @@ import pvImg from '../../assets/privateImg.png'
 const PrivateSales = () => {
   return (
     <>
-        <main id='Private-Sales' className='mt-[135px]'>
+        <main id='Private-Sales' className='mt-[135px] overflow-hidden'>
             <div className="container">
                 <div id="Private-Sales-Row" className='bg-brand rounded-[24px] py-[32px] px-[32px] relative h-[310px] overflow-hidden' data-aos="fade-up">
                     {/* ----------------------- Left Side -------------------- */}

@@ -4,7 +4,7 @@ import logo from '../../assets/logo.png'
 
 const Navbar = () => {
   return (
-    <div className='lg:block hidden'>
+    <div className='lg:block hidden overflow-hidden'>
       <header className='py-[14px] bg-brand shadow-[inset_0px_-50px_36px_-28px_rgba(255,255,255,0.15)]' data-aos="fade-down" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1500">
         <div className="container">
           <div id='Header-Row' className='flex items-center justify-between'>
